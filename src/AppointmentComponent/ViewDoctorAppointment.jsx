@@ -17,8 +17,14 @@ const ViewDoctorAppointment = () => {
         `http://localhost:8080/api/appointment/doctor/id?doctorId=${doctor.id}`
       );
       console.log(response.data);
-      setAllAppointments(response.data);
-      setFilteredAppointments(response.data); // Initial setting of filtered appointments
+
+      // Sắp xếp các cuộc hẹn theo ngày từ mới nhất đến cũ nhất
+      const sortedAppointments = response.data.sort((a, b) => {
+        return new Date(b.appointmentDate) - new Date(a.appointmentDate);
+      });
+
+      setAllAppointments(sortedAppointments);
+      setFilteredAppointments(sortedAppointments); // Initial setting of filtered appointments
     };
 
     getAllAppointments();
