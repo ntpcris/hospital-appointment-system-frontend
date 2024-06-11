@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.LoginLogo {
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.formLogin {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+
+.button-like {
+  display: inline-block;
+  
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.button-like:hover {
+  background-color: #e3e4e5;
+  color: #1975dc ;
+  cursor: pointer;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 500px;
+
+}
+
+.coverImage {
+  width: 100%;
+  height: auto;
+}
+#appointment-heading {
+  font-family: "Aharoni", sans-serif; /* Thiết lập font chữ */
+  font-weight: bold; /* Thiết lập chữ in đậm */
+  font-size: 24px; /* Thiết lập kích thước chữ */
+  text-align: center; /* Căn giữa văn bản */
+  color: #333; /* Màu chữ */
+}
+
+.img-doctor-card {
+  width: auto ;
+  height: 300px;
+}
+.specialist-image-wrapper {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the div a circle */
+  overflow: hidden; /* Clip the image if it overflows the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specialist-image-wrapper img {
+  width: 100%; /* Make the image fit the container */
+  height: 100%; /* Make the image fit the container */
+}
+td.imageSpecialist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  border-radius: 8px;
+}
+.overlay {
+  position: fixed;
+  
+  
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  
+  z-index:10; /* Ensure the overlay is on top of everything else */
+}
+
+.add-specialist-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust width as needed */
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-eye-icon {
+  margin-left: auto;
+  cursor: pointer;
+  
+}
+
+/* Pagination.css */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 0.25rem;
+}
+
+.pagination li a {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.pagination li a:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.pagination li.disabled a {
+  color: #ddd;
+  pointer-events: none;
+}
+
+.pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination .previous,
+.pagination .next {
+  font-weight: bold;
+}
+
+.pagination .break-me {
+  border: none;
+  background: transparent;
+}
